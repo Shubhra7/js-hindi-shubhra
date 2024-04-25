@@ -16,9 +16,26 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-console.log(JsUser.email)
-console.log(JsUser["email"])
-console.log(JsUser["full_name"])
-console.log(JsUser[mySym])
+// console.log(JsUser.email)
+// console.log(JsUser["email"])
+// console.log(JsUser["full_name"])
+// console.log(JsUser[mySym])
+
+// JsUser.email="aplu@gmail.com"
+// Object.freeze(JsUser)  // for locking and no one can make changes
+// console.log(JsUser)
+
+JsUser.greeting=function(){
+    console.log("Hello js user");
+}
+
+JsUser.greetingTwo=function(){
+    console.log(`Hello js user, ${this.name}`);
+}
+
+JsUser.greeting();
+JsUser.greetingTwo();
+
+
 
 

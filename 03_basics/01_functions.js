@@ -34,7 +34,46 @@ function loginUserMessage(username="sam"){
     return `${username} just logged in`
 }
 
-console.log(loginUserMessage("Shubhra"))
-console.log(loginUserMessage())
+// console.log(loginUserMessage("Shubhra"))
+// console.log(loginUserMessage())
 
+
+
+// when have to make cart then don't know how many parameter would be passed 
+
+function calculateCartPrice(...num1){  // it is rest operator like in java 'varchar' and in js also know as spread operator in other joining work
+    return num1
+}
+
+// console.log(calculateCartPrice(200,400,500))
+
+
+user={
+    name:"Shubhra",
+    price:4500
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and \nprice is ${anyobject.price}`);
+}
+
+// handleObject(user)
+
+handleObject({
+    name:"Debjit",
+    price:369
+})
+
+
+
+// passing array in function
+const myNewArray = [200, 400, 100, 600]
+
+function returnSecondValue(getuArray){
+    return getuArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray))
+
+console.log(returnSecondValue([40,10,30,52]))
 

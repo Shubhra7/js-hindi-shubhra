@@ -44,6 +44,7 @@
 
 
 
+// type 4***best****
 // high check first:: every item is number or not(*** project work need***)
 
 const myCart =[

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shuhra and sea</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+
+    // set interval ==> for multiple time in the interval
+    const sayDate = function(str){
+        console.log(str,Date.now());
+    }
+    
+    let bubu;
+    document.querySelector('#start').addEventListener('click',()=>{
+        if(!bubu){
+            bubu = setInterval(sayDate,1000,"Bubai");
+
+        }
+
+    });
+
+    document.querySelector('#stop').addEventListener('click',()=>{   // to stop the print
+        clearInterval(bubu)
+        bubu=null
+    });
+ 
+    
+    
+</script>
+</html>

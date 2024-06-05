@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bubai and code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    // in Browser Api we have thus ==> setTimeout, clearTimeout , setInerval
+    const changeit= function(){
+        document.querySelector('h1').innerHTML="The rock start"
+    }
+
+    const changetext = setTimeout(changeit,2000);   // First parameter is reference not the fucntion means only handeler
+
+    document.querySelector('#stop').addEventListener('click',()=>{
+        clearTimeout(changetext)    // clear timeout to stop the setTimeout fucntion
+        console.log("Stopped");
+    })
+
+
+
+</script>
+</html>

@@ -9,12 +9,12 @@ const newNums = [1,2,3,4,5,6,7,8,9,10]
 
 
 // chaining 
-// const ans1= newNums
-//     .map((item)=> item *10)
-//     .map((item)=> item+1)
-//     .filter((item) => item>35)
+const ans1= newNums
+    .map((item)=> item *10)
+    .map((item)=> item+1)
+    .filter((item) => item>35)
 
-// console.log(ans1);
+console.log(ans1);
 
 
 

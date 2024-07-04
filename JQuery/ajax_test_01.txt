@@ -1,0 +1,4 @@
+<div style="background-color:red; width:400px; height:auto;">
+<h2>jQuery and AJAX is FUN!!!</h2>
+<p id="p1">This is some text in a paragraph.</p>
+</div>

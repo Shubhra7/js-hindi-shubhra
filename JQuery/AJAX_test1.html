@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#1').click(function(){
+                $('#test1').load("ajax_test_01.txt");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="test1"><h4>Let jQuery AJAX Change This Test.</h4></div>
+<button id="1">Get External Content</button>
+</body>
+</html>

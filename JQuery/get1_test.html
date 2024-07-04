@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("button").click(function(){
+            $.get("demo_text.asp", function(data, status){
+            //   alert("Data: " + data + "\nStatus: " + status);
+            if(status === "success")
+              $(".kalu").html(data);
+            else
+                alert("Not able to fetch the request data");
+            });
+          });
+        });
+        </script>
+</head>
+<body>
+    <h1>Send an HTTP GET request to a page and get the result back</h1>
+
+    <div class="kalu" style="margin-top: 10px;margin-bottom: 10px;margin-left: 20%;margin-right: 20%;width: 60%;height: auto;text-align: center;background-color:aquamarine">
+        New data will enter here---
+    </div>
+    <button>Click me</button>
+</body>
+</html>
